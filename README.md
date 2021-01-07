@@ -1,7 +1,6 @@
 # linkedin-learning-js
 Exercicios e atividades do curso de formacão básica em JavaScript do linkedin learning !
 
-![O programa rodando](./imgprojeto/projeto1img.png)
 ![O codigo do programa](./img/code-coin-python.png)
 
 
@@ -12,7 +11,7 @@ de "Javascritp formação básica" do Linkedin Learning
 
 ## Peojeto um (O RELÓGIO ANALOGICO)<ul>
 Um projeto utilizando Javascrip para fazer um relógio fincional 
-  ![O programa rodando](./img/run-python.png)
+  ![O programa rodando](./imgprojeto/projeto1img.png)
   
 ```
 cotacao = json.loads(req.text)
