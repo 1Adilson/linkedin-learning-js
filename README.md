@@ -1,15 +1,15 @@
 # linkedin-learning-js
-Exercicios e atividades do curso de formacão básica em JavaScript do linkedin learning !
+Exercícios e atividades do curso de formação básica em JavaScript do linkedin learning !
 
 
 ## Sobre
-Este repositorio tem como intuito apresentar um pouco sobre pos projetos desenvolvidos durante o curso
-de "Javascritp formação básica" do Linkedin Learning
+Este repositório tem como intuito apresentar um pouco sobre os projetos desenvolvidos durante o curso
+de "Javascript formação básica" do Linkedin Learning
 
 
-## Peojeto um (O RELÓGIO ANALOGICO)<ul>
+## Projeto um (O RELÓGIO ANALOGICO)<ul>
 
-Um projeto utilizando Javascrip para fazer um relógio fincional, que atualiza de 
+Um projeto utilizando Javascrip para fazer um relógio funcional, que atualiza de 
 segundo em segundo mexendo seus ponteiros.
 
 ![O programa rodando](./imgprojeto/projeto1img.png)
@@ -46,9 +46,9 @@ function executarRelogio() {
 var intervalo = setInterval(executarRelogio, 1000);
 ```
 
-## Peojeto dois (Dedafio digitação)
+## Projeto dois (Desafio digitação)
 
-Um projeto utilizando Javascrip para fazer um desafio em que o jogador deve digitar o masi rapido possivel.
+Um projeto utilizando Javascrip para fazer um desafio em que o jogador deve digitar o mais rápido possível.
 
 ![O programa rodando](./imgprojeto/projeto2img.png)
   
@@ -128,9 +128,9 @@ testArea.addEventListener("keyup", spellCheck, false);
 resetButton.addEventListener("click", reset, false);
 ```
 
-## Peojeto três (Imagensde forma responsiva)<ul>
+## Projeto três (Imagens de forma responsiva)<ul>
 
-Um projeto utilizando Javascrip um função que tornaria as imagens do site responsivas.
+Um projeto utilizando Javascrip para criar uma função que tornaria as imagens do site responsivas.
 
 ![O programa rodando](./imgprojeto/projeto3img.png)
   
@@ -179,7 +179,7 @@ for (let i = 0; i<IMAGES.length; i++) {
 * [GitHUb](https://github.com/1Adilson) 
 
 ## Contribuição
-Todo esses projetos e aprendizados se devem ao Linkedin Learning e a instrutora <b>Amanda Cavallaro</b> por ensinar e disponibilizar todo o ótimo conteúdos.
+Todo esses projetos e aprendizados se devem ao Linkedin Learning e a instrutora <b>Amanda Cavallaro</b> por ensinar e disponibilizar todo o ótimo conteúdo.
 
 Contato da <b>Amanda Cavallaro</b> [Linkedin](https://www.linkedin.com/in/amandacavallaro/?trk=lil_course) 
 
