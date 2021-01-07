@@ -1,7 +1,7 @@
 # linkedin-learning-js
 Exercicios e atividades do curso de formacão básica em JavaScript do linkedin learning !
 
-![O programa rodando](./img/run-python.png)
+![O programa rodando](./imgprojeto/projeto1img.png)
 ![O codigo do programa](./img/code-coin-python.png)
 
 
