@@ -57,13 +57,11 @@ var intervalo = setInterval(executarRelogio, 1000);
 * [GitHUb](https://github.com/1Adilson) 
 
 ## Contribuição
-Todo esse projeto e aprendizado se deve a solyd e ao professor <b>Guilherme Junqueira</b> por de forma gratuita ensinar e disponibilizar ótimos conteúdos 
+Todo esses projetos e aprendizados se devem ao Linkedin Learning e a instrutora <b>Amanda Cavallaro</b> por ensinar e disponibilizar todo o ótimo conteúdos.
 
-Contato do <b>Guilherme Junqueira</b> [Linkedin](https://www.linkedin.com/in/guilhermej) 
-
-Contato da plataforma [Solyd](https://solyd.com.br/ead/) 
+Contato da <b>Amanda Cavallaro</b> [Linkedin](https://www.linkedin.com/in/amandacavallaro/?trk=lil_course) 
 
 ## Finalização
-Este projeto foi de total cunho educativo onde passei a minha visão de colocar em prática meus aprendizados em Python
+Este projeto foi educativo onde passei a minha visão de colocar em prática meus aprendizados em Javascript
 
       
