@@ -47,7 +47,131 @@ function executarRelogio() {
 
 var intervalo = setInterval(executarRelogio, 1000);
 ```
+
+## Peojeto dois (Dedafio digitação)
+
+Um projeto utilizando Javascrip para fazer um desafio em que o jogador deve digitar o masi rapido possivel.
+
+![O programa rodando](./imgprojeto/projeto2img.png)
   
+Arquivo .js
+  
+```
+const testWrapper = document.querySelector(".test-wrapper");
+const testArea = document.querySelector("#test-area");
+const originText = document.querySelector("#origin-text p").innerHTML;
+const resetButton = document.querySelector("#reset");
+const theTimer = document.querySelector(".timer");
+
+timer = [0,0,0,0];
+var interval;
+var timerRunning = false;
+
+// Adiciona zero inicial aos números <= 9 (apenas para estética):
+function leadingZero(time) {
+    if(time <= 9){
+        time = "0" + time;
+    }
+    return time;
+}
+
+// Executa um timer padrão de minuto / segundo / centésimos:
+function runTimer() {
+    let currentTime = leadingZero(timer[0]) + ":" + leadingZero(timer[1]) + ":" + leadingZero(timer[2]);
+    theTimer.innerHTML = currentTime;
+    timer[3]++;
+
+    timer[0] = Math.floor((timer[3]/100)/60);
+    timer[1] = Math.floor((timer[3]/100) - (timer[0] * 60));
+    timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
+}
+
+// Verifica se texto digitado com o fornecido na página:
+function spellCheck() { 
+    let textEntered = testArea.value;
+    let originTextMatch = originText.substring(0, textEntered.length);
+    
+    if (textEntered == originText) {
+        clearInterval(interval);
+        testWrapper.style.borderColor = "#429890";
+    } else {
+        if (textEntered == originTextMatch) {
+            testWrapper.style.borderColor = "#65CCf3";
+        } else {
+            testWrapper.style.borderColor = "#E95D0F";
+        }
+    }
+}
+
+// Inicia o cronômetro:
+function start(){
+   let textEnteredLength = testArea.value.length;
+    if (textEnteredLength === 0 && !timerRunning) {
+        timerRunning = true;
+        interval = setInterval(runTimer, 10);
+    }
+}
+
+// Função de recomeçar:
+function reset() {
+    clearInterval(interval);
+    interval = null;
+    timer = [0,0,0,0];
+    timerRunning = false;
+
+    testArea.value = "";
+    theTimer.innerHTML = "00:00:00";
+    testWrapper.style.borderColor = "grey";
+}
+
+// Listeners de eventos para entrada de teclado e o botão de recomeçar:
+testArea.addEventListener("keypress", start, false);
+testArea.addEventListener("keyup", spellCheck, false);
+resetButton.addEventListener("click", reset, false);
+```
+
+## Peojeto três (Imagensde forma responsiva)<ul>
+
+Um projeto utilizando Javascrip um função que tornaria as imagens do site responsivas.
+
+![O programa rodando](./imgprojeto/projeto3img.png)
+  
+Arquivo .js
+  
+```
+const IMAGES = document.querySelectorAll("img");
+const SIZES = {
+    showcase: "100vw",
+    reason: "(max-width: 799px) 100vw, 372px",
+    feature: "(max-width: 799px) 100vw, 558px",
+    story: "(max-width: 799px) 100vw, 670px",
+};
+
+function makeSrcset(imgSrc) {
+    let markup = [];
+    let width = 400;
+
+    for (let i = 0; i<5; i++) {
+        markup[i] = imgSrc + "-" + width + ".jpg " + width + "w";
+        width+=400;
+    }
+
+    return markup.join();
+}
+
+for (let i = 0; i<IMAGES.length; i++) {
+    let imgSrc = IMAGES[i].getAttribute("src");
+    imgSrc = imgSrc.slice(0,-8);
+    let srcset = makeSrcset(imgSrc);
+    IMAGES[i].setAttribute("srcset", srcset);
+
+    let type = IMAGES[i].getAttribute("data-type");
+    let sizes = SIZES[type];
+    IMAGES[i].setAttribute("sizes", sizes);
+
+}
+
+```
 
 
 ## Redes sociais
