@@ -1,8 +1,6 @@
 # linkedin-learning-js
 Exercicios e atividades do curso de formacão básica em JavaScript do linkedin learning !
 
-![O codigo do programa](./imgprojeto/496940-637417260930395393-16x9.jpg)
-
 
 ## Sobre
 Este repositorio tem como intuito apresentar um pouco sobre pos projetos desenvolvidos durante o curso
@@ -14,7 +12,7 @@ de "Javascritp formação básica" do Linkedin Learning
 Um projeto utilizando Javascrip para fazer um relógio fincional, que atualiza de 
 segundo em segundo mexendo seus ponteiros.
 
-  ![O programa rodando](./imgprojeto/projeto1img.png)
+![O programa rodando](./imgprojeto/projeto1img.png)
   
 Arquivo .js
   
