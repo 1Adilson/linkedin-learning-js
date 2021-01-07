@@ -1,7 +1,7 @@
 # linkedin-learning-js
 Exercicios e atividades do curso de formacão básica em JavaScript do linkedin learning !
 
-![O codigo do programa](./img/code-coin-python.png)
+![O codigo do programa](./imgprojeto/496940-637417260930395393-16x9.jpg)
 
 
 ## Sobre
